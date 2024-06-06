@@ -1,12 +1,121 @@
-https://<token>github.com/revou-fundamental-course/27-may-24-Marioo12.git</token>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Portofolio</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universitas Kristen Satya Wacana</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-icon"></div>
+
+      <section>
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#facilities">Our Facilities</a>
+        <a class="nav-item" href="#message us">Message Us</a>
+      </section>
+    </nav>
+    <hr />
+    <section class="section-container">
+      <!-- Home -->
+      <section id="home">
+        <header>
+          <h2>Hi <span id="name"></span>, welcome to My Web</h2>
+        </header>
+
+        <article>
+          <h1>
+            Universitas Kristen Satya Wacana (UKSW) adalah perguruan tinggi swasta di Salatiga, Jawa Tengah, Indonesia. Rektor saat ini adalah Prof. Dr. Intiyas Utami, S.E., M.Si., Ak. UKSW dikenal sebagai “Kampus Indonesia Mini” karena
+            mahasiswanya berasal dari seluruh Indonesia, mencerminkan keragaman suku dan budaya. UKSW, yang telah terakreditasi UNGGUL, berfokus pada pengembangan “Minoritas Kreatif” dan berupaya menghasilkan pemimpin yang sinergis, patuh,
+            harmonis, dan berintegritas.
+          </h1>
+
+          <div class="banner-container">
+            <img class="img-slideshow" src="img/Kampus-UKSW.jpg" style="display: block" />
+            <img class="img-slideshow" src="img/USER2202007171109231.jpg" style="display: block" />
+            <img class="img-slideshow" src="img/Kampus-UKSW.jpg" style="display: block" />
+          </div>
+        </article>
+      </section>
+      <hr />
+      <!-- Our Facilities -->
+      <section id="facilities">
+        <header>
+          <h1>Our Facilities</h1>
+        </header>
+        <article class="facility-list">
+          <div class="container-facility">
+            <div style="width: 200px; height: 200px; border: 1px solid black; border-radius: 150px">
+              <img class="fasilitas" src="img/Forest class.jpg" alt="Forest class facility" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit" />
+            </div>
+            <h4>Forest class</h4>
+          </div>
+          <div>
+            <div style="width: 200px; height: 200px; border: 1px solid black; border-radius: 150px">
+              <img class="fasilitas" src="img/diplomacy room.jpg" alt="Forest class facility" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit" />
+            </div>
+            <h4>diplomacy room</h4>
+          </div>
+          <div>
+            <div style="width: 200px; height: 200px; border: 1px solid black; border-radius: 150px">
+              <img class="fasilitas" src="img/kelas angkringan.jpg" alt="Forest class facility" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit" />
+            </div>
+            <h4>kelas angkringan</h4>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <!-- Message Us -->
+      <section id="message us">
+        <header>
+          <h2>Message Us</h2>
+        </header>
+
+        <section class="message-us-section">
+          <!-- Form -->
+          <section class="form-container">
+            <form id="formulir">
+              <div class="form-group">
+                <label for="nama">Name :</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="tglLahir" class="">Tanggal Lahir :</label>
+                <input type="date" id="tglLahir" name="tglLahir" />
+              </div>
+              <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="lakilaki" name="jenisKelamin" value="Laki-laki" required="" />
+                <label for="lakilaki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" />
+                <label for="perempuan">Perempuan</label>
+              </div>
+              <div class="form-group" data-quillbot-parent="eiWQ5M0mX71SeDGPRi7VA">
+                <label for="pesan">Pesan :</label>
+                <quillbot-extension-highlights
+                  data-element-id="eiWQ5M0mX71SeDGPRi7VA"
+                  data-element-type="text"
+                  style="display: initial; visibility: initial; opacity: initial; clip-path: initial; position: absolute; float: left; top: 0px; left: 0px; z-index: 1 !important; pointer-events: none"
+                ></quillbot-extension-highlights
+                ><textarea id="pesan" name="pesan" rows="4" required="" data-gramm="false" wt-ignore-input="true" data-quillbot-element="eiWQ5M0mX71SeDGPRi7VA"></textarea>
+              </div>
+              <button type="submit" id="submit">Kirim</button>
+            </form>
+          </section>
+          <!-- Result -->
+          <section class="result-container">
+            <div class="form-result">
+              <textarea id="result" rows="15" cols="20" readonly=""></textarea>
+            </div>
+          </section>
+        </section>
+      </section>
+      <!-- akhir message us -->
+    </section>
+    <footer class="footer">
+      <p>built by Alexander Mario Saputra</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
